@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+header {
+    height: 60px;
+    font-family: cursive;
+    color: #ffffff;
+    background-color: #1e1d1d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#date {
+
+    color: #ffffff;
+}
+
+#time {
+    color: #ffffff;
+}
+
+.clock {
+    width: 520px;
+    padding: 40px;
+    background-color: #1e1d1d;
+    box-shadow: 5px 5px 70px #808080;
+    border-radius: 8px;
+}
+
+.clock .display {
+    padding: 40px 10px 10px;
+    border-radius: 6px;
+    background-color: #847f7f;
+    position: relative;
+}
+
+.clock .display .weekdays {
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    font-family: 'Text Me One';
+}
+
+.weekdays span {
+    padding: 0 10px;
+    opacity: 0.2;
+}
+
+.weekdays span.active {
+    opacity: 1;
+}
+
+.display .timeDisplay {
+    display: flex;
+    justify-content: center;
+}
+
+.timeDisplay .time {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-family: 'Text Me One';
+}
+
+.timeDisplay .format {
+    font-size: 30px;
+    margin-top: 32px;
+    margin-left: 10px;
+    font-family: 'Text Me One',
+}
+
+.time .dot {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    25% {
+        opacity: 0;
+    }
+}
+
+footer {
+    background-color: #1e1d1d;
+    font-family: cursive;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: large;
+    color: #ffffff;
+}
+
+.footer-content a:hover {
+    text-decoration: underline #ffffff;
+}
